@@ -7,5 +7,5 @@ module.exports = {
         ]
     },
     title: 'Design Systems for Blender',
-    base: '/docs/'
+    base: '/design-systems-blender/'
 }
