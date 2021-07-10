@@ -4,8 +4,8 @@ bl_info = {
     "author": "@studiochris",
     "version": (0, 0, 1),
     "blender": (2, 93, 0),
-    "location": "Shader Editor > Tools > Design Systems",
-    "warning": "Experimental: First try at writing a Blender Addon",
+    "location": "Shader Editor > Tools > Design System",
+    "warning": "Experimental: First try at writing a Blender Addon or Python",
     "support": "COMMUNITY",
     "category": "Interface",
 }
@@ -211,7 +211,7 @@ class NODE_EDITOR_PT_DesignSystemTokensPanel_ColorsPanel(bpy.types.Panel):
         design_system = scene.design_system
         
         row = layout.row();
-        row.label(text="Crimson")
+        row.label(text="Crimson", icon_value=bpy.data.materials["zDS_CrimsonThumbnail"].preview.icon_id)
         
         row = layout.row();
         row.label(text="Orange")
